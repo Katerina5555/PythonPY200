@@ -3,7 +3,9 @@ from typing import Union
 
 class Glass:
     def __init__(self, capacity_volume: Union[int, float], occupied_volume: Union[int, float]):
-        #  TODO заменить на метод
+        self.capacity_volume = None
+             #  TODO заменить на метод
+
         if not isinstance(capacity_volume, (int, float)):
             raise TypeError
         if not capacity_volume > 0:
