@@ -6,4 +6,4 @@ from typing import Union
 
 if __name__ == "__main__":
     glass = Glass(200, 100)  # экземпляр класса
-    print(glass.capacity_volume, glass.occupied_volume)
+    print(glass.__capacity_volume, glass.__occupied_volume)
