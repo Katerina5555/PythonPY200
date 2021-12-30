@@ -5,9 +5,10 @@ class Glass:
     def __init__(self, capacity_volume: Union[int, float], occupied_volume: Union[int, float]):
 
         self.capacity_volume = self.__check_capacity_volume(capacity_volume)      #  TODO инициализировать объект "Стакан"
-
+        self.occupied_volume = self.__check_overflow(capacity_volume, occupied_volume)  # или так и вариант ниже
         self.occupied_volume = self.__check_occupied_volume(occupied_volume)
 
+        # self.__check_overflow(self.capacity_volume, self.occupied_volume)
     @staticmethod
     def __check_capacity_volume(value) -> Union[int, float]:
         if not isinstance(value, (int, float)):
@@ -24,8 +25,13 @@ class Glass:
             raise ValueError
         return value
 
+    @staticmethod
+    def __check_overflow(capacity, occupied):
+        if capacity < occupied:
+            raise OverflowError('Стакан не резиновый')
+
 if __name__ == "__main__":
-    glass_1 = Glass(300, 200)    # TODO инициализировать два объекта типа Glass
+    glass_1 = Glass(300, 300)    # TODO инициализировать два объекта типа Glass
     print((glass_1.__dict__))
     glass_2 = Glass(200, 100)    # попытка ввести строковое значение или отрицательного
 
