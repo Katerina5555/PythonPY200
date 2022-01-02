@@ -10,7 +10,7 @@ files:
       length: 44
       offset: 724
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: 'Glass(500, 50)  # экземпляр класса'
   - offset: 2879
@@ -40,7 +40,7 @@ files:
       length: 28
       offset: 1041
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: print(id(glass1) == id(glass2))
   text: |
@@ -81,6 +81,6 @@ files:
   learner_created: false
 status: Solved
 feedback:
-  time: Thu, 30 Dec 2021 15:20:46 UTC
+  time: Sun, 02 Jan 2022 10:28:36 UTC
 record: -1
 post_submission_on_open: true

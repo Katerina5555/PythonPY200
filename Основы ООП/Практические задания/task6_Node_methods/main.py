@@ -10,18 +10,20 @@ class Node:
         :param value: Любое значение, которое помещено в узел
         :param next_: следующий узел, если он есть
         """
-        ...  # TODO добавить атрибуты
+        self.value = value
+        self.next_node = next_# TODO добавить атрибуты
 
     def get_value(self) -> Any:
         """Метод, который возвращает значение атрибута value"""
-        ...  # TODO вернуть значение узла
+        return self.value  # TODO вернуть значение узла
 
-    # TODO добавить метод get_next
+    def get_next_node(self):
+        return self.next_node   # TODO добавить метод get_next
 
 
 if __name__ == '__main__':
     first_node = Node(1)  # первый узел
     second_node = Node(2)  # второй узел
 
-    # TODO с помощью метода распечатать значение первого узла
-    # TODO  с помощью метода распечатать следующий узел второго узла
+    print(first_node.get_value())     # TODO с помощью метода распечатать значение первого узла
+    print(second_node.get_next_node())      # TODO  с помощью метода распечатать следующий узел второго узла

@@ -10,8 +10,8 @@ files:
       length: 44
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       class Glass:
           def __init__(self, material: str):
@@ -50,5 +50,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 02 Jan 2022 10:48:17 UTC
 record: -1
