@@ -65,6 +65,9 @@ files:
 
         # TODO попробовать инициализировать не корректные объекты
   learner_created: false
+- name: Check.py
+  visible: true
+  learner_created: true
 status: Solved
 feedback:
   time: Thu, 30 Dec 2021 14:42:48 UTC

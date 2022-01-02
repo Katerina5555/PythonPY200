@@ -3,15 +3,15 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 0
-    length: 81
+  - offset: 24
+    length: 988
     placeholder_text: '# TODO class Date'
     initial_state:
-      length: 17
-      offset: 0
+      length: 1011
+      offset: 10
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |
       # TODO
   text: '# TODO class Date'
@@ -33,5 +33,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 02 Jan 2022 11:59:41 UTC
 record: -1
