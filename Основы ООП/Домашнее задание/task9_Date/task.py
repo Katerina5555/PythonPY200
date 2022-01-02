@@ -1,5 +1,3 @@
-import random
-import re
 class Date:
     def __init__(self, day_: int, month_: int, year_: int):
         self.day_ = self.__check_day(day_)
@@ -12,7 +10,7 @@ class Date:
             raise TypeError
         if 0 >= day_ > 31:
             raise ValueError
-        return "{0:0=2d}".format(day_)
+        return day_
 
     @staticmethod
     def __check_month(month_: int):
@@ -20,16 +18,23 @@ class Date:
             raise TypeError
         if 0 >= month_ > 12:
             raise ValueError
-        return "{0:0=2d}".format(month_)
+        return month_
 
     @staticmethod
     def __check_year(year_: int):
         if not isinstance(year_, int):
             raise TypeError
-        return "{0:0=4d}".format(year_)
+        return year_
+
+    def __repr__(self):
+        print(f"Date ({self.day_},{self.month_},{self.year_})")
 
     def __str__(self) -> str:
-        return f"{self.day_}/{self.month_}/{self.year_}"
+        day_ = "{0:0=2d}".format(self.day_)
+        month_ = "{0:0=2d}".format(self.month_)
+        year_ = "{0:0=4d}".format(self.year_)
+
+        return f"{day_}/{month_}/{year_}"
 
 
 if __name__ == "__main__":
