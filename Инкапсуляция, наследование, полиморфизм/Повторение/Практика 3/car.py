@@ -74,7 +74,7 @@ class Car:
         cls.brand = new_brand
 
     @classmethod
-    def set_max_speed(cls, max_speed):
+    def set_max_speed(cls, max_speed) -> int:
         """Возможность изменения максимальной скорости"""
         if not isinstance(max_speed, (int, float)):
             raise TypeError(f'Ожидается тип {int} или {float}, получен {type(max_speed)}')
@@ -289,9 +289,9 @@ class Car:
 class Honda(Car):
     brand = "Honda"
     __created_car = 0
+
     def __init__(self):
         super().__init__()
-
 
 
 if __name__ == '__main__':

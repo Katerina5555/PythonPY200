@@ -1,3 +1,10 @@
+class Node():
+    ...
+
+class DoubleLinkedNode(Node):
+    ...
+
+
 class LinkedList:
     ...
 
